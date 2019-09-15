@@ -1,0 +1,840 @@
+@font-face {
+  font-family: 'Dosis Regular';
+  src:  url('fonts/Dosis-Regular.eot'),
+        url('fonts/Dosis-Regular.woff'),
+        url('fonts/Dosis-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+@font-face {
+  font-family: 'Open Sans Regular';
+  src: url('fonts/OpenSans-Regular.eot'),
+       url('fonts/OpenSans-Regular.woff'),
+       url('fonts/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('fonts/OpenSans-Bold.eot'),
+       url('fonts/OpenSans-Bold.woff'),
+       url('fonts/OpenSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('fonts/MyriadPro-Regular.eot'),
+       url('fonts/MyriadPro-Regular.woff'),
+       url('fonts/MyriadPro-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 2vw;
+  line-height: 1.62;
+
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: 'Open Sans Regular', sans-serif;
+  box-sizing: inherit;
+}
+
+
+/*-------------------------------------------------------*/
+
+.header__main {
+  position: relative;
+  background-color: #b3aba3;
+  background-image: url("img/backtop.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 6rem;
+  padding-right: 8rem;
+  box-sizing: inherit;
+}
+
+.header__nav {
+  position: absolute;
+  top: 3.5rem;
+  right: 4.5rem;
+  width: 5.5rem;
+  min-width: 41px;
+  height: 3.5rem;
+  min-height: 29px;
+}
+
+.header__nav svg {
+  width: 100%;
+  height: 100%;
+  min-width: 41px;
+  min-height: 29px;
+}
+
+.header__logo {
+  margin: 18.5rem auto 37.5rem;
+}
+
+.header__logo img {
+  width: 72vw;
+}
+
+/*-------------------------------------------------------*/
+.hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip-path: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+main h1 {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Dosis Regular', sans-serif;
+  font-size: 4rem;
+}
+
+/*-------------------------------------------------------*/
+
+.block {
+
+  position: relative;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: inherit;
+  margin-bottom: 7rem;
+}
+
+.block h2 {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Dosis Regular', sans-serif;
+  font-size: 3.33rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.17;
+  margin-bottom: 3.33rem;
+  padding-left: 6rem;
+  padding-right: 8rem;
+}
+
+.block__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4rem;
+  padding-left: 3.6rem;
+  padding-right: 3.6rem;
+
+  color: #7a8083;
+  text-align: center;
+}
+
+/*--------------------------*/
+
+.discography {
+  padding-bottom: 30rem;
+
+  background-image: url("img/backdiskography.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+}
+
+.discography .d__description {
+  margin-bottom: 7rem;
+}
+
+.d__album {
+  margin:0;
+  padding-left: 7vw;
+  padding-right: 8vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.d__name {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans Bold', sans-serif;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 3.3rem;
+}
+
+.d__name time {
+  border-bottom: 1px #000000 solid;
+}
+
+.d__album p {
+}
+
+.d__album .d__intro {
+  font-size: 1.6rem;
+  line-height: 1;
+
+  margin-bottom: 1.5rem;
+}
+
+.d__album .d__text {
+  color: #aaaaaa;
+}
+
+.btn {
+  display: flex;
+
+  width: 13rem;
+  height: 3.8rem;
+  opacity: 0.93;
+
+  background-color: #aaaaaa;
+  /* border: solid 1px #626262; */
+  font-family: 'Open Sans Bold', sans-serif;
+  color: #000002;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.btn__play {
+  margin-top: 3.3rem;
+  margin-bottom: 7.3rem;
+
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.btn__play--2010 {
+  background-color: #5c4d6d;
+  background-image: url("img/backplay2010.png");
+  color: #ffffff;
+}
+.btn__play--2012 {
+  background-color: #e4e4e4;
+  background-image: url("img/backplay2012.png");
+}
+.btn__play--2015 {
+  background-color: #ebedee;
+  background-image: url("img/backplay2015.png");
+  margin-bottom: 0;
+}
+
+/* -------------------------- */
+.ct__description {
+  margin-bottom: 0;
+}
+
+.ct__tour {
+  padding: 21rem 21rem 3rem 3rem;
+
+  background-image: url("img/backconcerttours.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: 100% auto;
+}
+
+.ct__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans Bold', sans-serif;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 6rem;
+}
+
+.ct__title time {
+  border-bottom: 1px #000000 solid;
+}
+
+.ct__tour p {
+}
+
+.ct__tour .ct__now {
+  font-size: 1.5rem;
+  line-height: 1.06;
+
+  margin-bottom: 1.5rem;
+}
+
+.ct__tour .ct__text {
+  color: #7a8083;
+  margin-bottom: 7rem;
+}
+
+.btn__buy, .btn__itunes {
+  background-color: transparent;
+  border: solid 1px #626262;
+}
+
+.btn__buy svg, .btn__itunes svg {
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-top: 0.25rem;
+  margin-left: 1.2rem;
+}
+
+.btn__buy line, .btn__itunes line {
+  fill:none;
+  stroke:#2F3435;
+  stroke-width:12;
+  stroke-linecap:square;
+  stroke-miterlimit:10;
+}
+
+/* ------------------- */
+
+.latter-compositions {
+  margin-bottom: 4rem;
+}
+
+.lc__track {
+  margin:0;
+  margin-left: 7vw;
+  margin-right: 8vw;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #f5f6f6;
+
+  padding-top: 2.3rem;
+  margin-bottom: 3.2rem;
+}
+
+.lc__albumname {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Open Sans Bold', sans-serif;
+  text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 3.3rem;
+
+  padding-left: 2.3rem;
+  padding-right: 4rem;
+}
+
+.lc__albumname time {
+  border-bottom: 1px #000000 solid;
+}
+
+.lc__track .lc__name {
+  font-size: 1.5rem;
+  line-height: 1.06;
+  letter-spacing: 0.41px;
+  margin-bottom: 2.3rem;
+  padding-left: 2.3rem;
+  padding-right: 4rem;
+}
+
+.lc__track .lc__text {
+  color: #7a8083;
+  margin-bottom: 4rem;
+  padding-left: 2.3rem;
+  padding-right: 4rem;
+}
+
+.lc__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding-left: 2.3rem;
+  padding-right: 5.7rem;
+}
+
+.btn__itunes svg {
+  margin-left: 0.6rem;
+}
+
+.lc__statistic {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+}
+
+.lc__statistic li {
+  display: flex;
+  align-items: center;
+}
+
+.lc__statistic svg {
+  width: 1.1rem;
+  height: 1.1rem;
+
+  margin-right: 0.6rem;
+}
+
+.lc__statistic span {
+  margin-right: 1.3rem;
+}
+
+.lc__track figure {
+  margin: 0;
+  padding: 0;
+}
+
+.lc__track img {
+  width: 100%;
+  height: 100%;
+}
+
+/* -------------------------------- */
+
+.music-slider {
+  background-color: #353535;
+  background-image: url("img/backslider.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#7a8083;
+}
+
+.ms__slide {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7.7rem;
+}
+
+.ms__logo {
+  position: relative;
+  width: 1.67rem;
+  height: 1.93rem;
+  margin-bottom: 1.8rem;
+}
+
+
+
+.ms__logo::before, .ms__logo::after {
+  position: absolute;
+  display: block;
+
+  top: 0.2rem;
+  width: 1.87rem;
+  height: 0.53rem;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ms__logo::before {
+  content: '';
+  left: -3.33rem;
+  background-image: url(img/leftlightning.png);
+}
+
+.ms__logo::after {
+  content: '';
+  right: -3.33rem;
+  background-image: url(img/rightlightning.png);
+}
+
+.ms__logo img {
+  width: 1.67rem;
+  height: 1.93rem;
+}
+
+.ms__slide .ms__title {
+  margin:0 4.6rem 2.6rem 4.87rem;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Myriad Pro regular', sans-serif;
+  font-size: 1.13rem;
+  letter-spacing: 2.01px;
+}
+
+.ms__slide .ms__text {
+  margin:0 7.47rem 4.33rem 8.8rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.ms__slide .ms__marker {
+  align-items: center;
+  padding: 0;
+
+  text-align: center;
+  font-size: 0.93rem;
+  line-height: 1.73;
+
+  margin-bottom: 5.33rem;
+}
+
+.ms__nav {
+  margin-bottom: 5.73rem;
+  text-align: center;
+}
+/* ------------------------------------------- */
+
+.ntn__list {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.ntn__card {
+  margin-bottom: 3.6rem;
+  padding: 2.3rem 2.6rem 3.6rem 2.3rem;
+  position: relative;
+  background-color: #f5f6f6;
+  height: 28.13rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom;
+}
+
+.ntn__card--01 {
+  background-image: url("img/ntn1back.png");
+}
+.ntn__card--02 {
+  background-image: url("img/ntn2back.png");
+}
+.ntn__card--03 {
+  background-image: url("img/ntn3back.png");
+}
+.ntn__card--04 {
+  background-image: url("img/ntn4back.png");
+}
+.ntn__card--05 {
+  background-image: url("img/ntn5back.png");
+}
+.ntn__card--06 {
+  background-image: url("img/ntn6back.png");
+}
+
+
+.ntn__card::after {
+
+}
+
+.ntn__card--01::after {}
+.ntn__card--02::after {}
+.ntn__card--03::after {}
+.ntn__card--04::after {}
+.ntn__card--05::after {}
+.ntn__card--06::after {}
+
+.ntn__cardname {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Bold', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.2rem;
+  color: #ffffff;
+  font-size: 0.93rem;
+}
+
+.ntn__cardname time {
+  border-bottom: 1px #000000 solid;
+  color: #000000;
+}
+
+.ntn__card .ntn__trackname {
+  font-size: 1.53rem;
+  line-height: 1;
+  margin-bottom: 2.3rem;
+}
+
+.ntn__card .ntn__text {
+  color: #7a8083;
+}
+/* --------------------------------------------- */
+.upcoming-events {
+  background-image: url('img/backue.jpg');
+  background-position: left top;
+  background-size: contain;
+  padding-top: 4.6rem;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+}
+
+.ue__list {
+  margin-top: 2rem;
+  margin-left: 11rem;
+  margin-right: 3.87rem;
+  padding-bottom: 5rem;
+}
+
+.ue__card {
+  margin-bottom: 13rem;
+  position: relative;
+}
+
+.ue__card:last-child {
+
+}
+
+.ue__card::after {
+  content: "";
+  position: absolute;
+  bottom: -12rem;
+  left: 2rem;
+  width: 0.07rem;
+  height: 11rem;
+  background-color: #000000;
+}
+
+.ue__card:last-child::after {
+  content: "";
+  height: 0;
+}
+
+.ue__cardname {
+  margin: 0;
+  font-size: 1.53rem;
+  text-transform: uppercase;
+  line-height: 1.06;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.ue__cardname::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 8.8rem;
+  height: 0.07rem;
+  background-color: #000000;
+}
+
+.ue__cardcontent {
+  color: #7a8083;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.ue__card time {
+  color: #7a8083;
+}
+
+.ue__cardcontent::after {
+  content: "";
+  position: absolute;
+  bottom: -4.5rem;
+  left: 2rem;
+  width: 0.07rem;
+  height: 3.4rem;
+  background-color: #000000;
+}
+/* ------------------------------------------- */
+.history {
+  padding-top: 5.5rem;
+  background-image: url("img/backhistory.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.history__description {
+  letter-spacing: 1.1px;
+}
+
+.history__slider {
+  position: relative;
+  height: 70rem;
+}
+
+.slide-decoration {
+  position: absolute;
+  width: 70vw;
+  left:50%;
+  margin-left: -35vw;
+  justify-content: space-around;
+  display: flex;
+  top: 1rem;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history__nav {
+  display: flex;
+  width: 500%;
+}
+
+.nav__point--before,
+.nav__point--after {
+  margin-top: 1.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.nav__point--before {
+
+  margin-left: 5rem;
+}
+
+.nav__point--after {
+
+  margin-right: 5rem;
+}
+
+.slide-decoration::before {
+  content: "";
+  position: absolute;
+  top: 75%;
+  width: 10rem;
+  height: 0.07rem;
+  background-color: #000000;
+  left: 0;
+}
+.slide-decoration::after {
+  content: "";
+  position: absolute;
+  top: 75%;
+  right: 0;
+  width: 10rem;
+  height: 0.07rem;
+  background-color: #000000;
+}
+
+.history__slides {
+  display: flex;
+}
+
+.nav__point {
+  /*! width: 91vw; */
+  display: flex;
+  font-family: "Dosis Regular", Arial, sans-serif;
+  font-size: 2.37rem;
+  text-transform: uppercase;
+}
+
+.history__slide {
+  flex-direction: column;
+  text-align: center;
+}
+
+.history__text {
+  width: 13.5rem;
+}
+/* --------------------------------------- */
+
+.contact {
+  background-image: url("img/backcontacts.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 0;
+  padding-bottom: 30.6rem;
+}
+
+.contact h2 {
+  text-align: left;
+  margin-bottom: 2.4rem;
+  margin-left: 10rem;
+  padding-left: 0;
+}
+
+.contact .block__description {
+  text-align: left;
+  padding-left: 10rem;
+  margin-bottom: 5rem;
+}
+
+.contact p {
+  margin: 0;
+  padding: 0;
+}
+
+.contact__content {
+  display: flex;
+  margin: 0 2.5rem 0 10rem;
+  justify-content: flex-start;
+}
+
+.contact__writeme {
+  width: 25rem;
+  margin-right: 8rem;
+}
+
+.contact__writeme input{
+  width: 100%;
+  margin-bottom: 3rem;
+  border: none;
+  border-bottom: solid #000002 1px;
+  background: none;
+  text-align: left;
+  padding: 0;
+  font-size: 1rem;
+  color:#7a8083;
+  padding-bottom: 0.8rem;
+}
+
+.contact__writeme input::placeholder {
+  font-size: 1rem;
+  color:#7a8083;
+}
+
+.contact__writeme .contact__send {
+  border-bottom: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1.33rem;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+
+.contact__social {
+  list-style: none;
+  margin: 0;
+  padding: 0 1.6rem;
+  border-left: solid #000002 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 13rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.contact__svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.st1 {
+  fill: #333033;
+}
