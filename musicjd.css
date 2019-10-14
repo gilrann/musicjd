@@ -61,6 +61,8 @@ body {
   font-family: 'Open Sans Regular', sans-serif;
   box-sizing: inherit;
   width: 100vw;
+
+  scroll-behavior: smooth;
 }
 
 
@@ -1592,7 +1594,7 @@ main h1 {
   .history__slide {}
 
   .history__text {}
-  
+
   .slick-slide {position: relative}
   .slick-slide::after {
     content: "";
