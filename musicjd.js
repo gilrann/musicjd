@@ -30,14 +30,14 @@ $('.history__nav').slick({
  infinite: true,
  focusOnSelect: true,
  responsive: [
-	    {
-	      breakpoint: 1440,
-	      settings: {
-	        slidesToShow: 3,
-          centerMode: true,
-          infinite: false
-	                 }
-	    },
+  	    {
+  	      breakpoint: 1440,
+  	      settings: {
+  	        slidesToShow: 3,
+            centerMode: true,
+            infinite: true
+  	                 }
+  	    },
 
 	    {
 	      breakpoint: 990,

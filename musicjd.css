@@ -1585,7 +1585,10 @@ main h1 {
     width: 0;
     height: 0;
   }
-  .slide-decoration::after {}
+  .slide-decoration::after {
+    width: 6vw;
+    right: 2rem;
+  }
 
   .history__slides {width: 20vw !important;display: flex !important;}
 
@@ -1601,7 +1604,7 @@ main h1 {
     position: absolute;
     top: 49%;
     right: -2.4rem;
-    width: 10rem;
+    width: 6vw;
     height: 0.07rem;
     background-color: #000;
   }
